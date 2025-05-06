@@ -63,6 +63,15 @@
         let remove_button = document.getElementById("remove")
         let p = document.querySelector("p")
 
+        add_button.addEventListener("click", function() {
+            count++
+            p.innerText = count
+        })
+        remove_button.addEventListener("click", function() {
+            count--
+            p.innerText = count
+        })
+
     </script>
 </body>
 </html>
