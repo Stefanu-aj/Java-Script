@@ -12,10 +12,7 @@
     <button id="remove">remove</button>
 
     <script>
-        let name = "Stefanu";
-
-        console.log(name);
-
+       
        let city = "Ibadan";
         console.log(city);
 
@@ -29,48 +26,116 @@
         let num2 = 2;
         console.log(num1 + num2);
 
-        console.log(num1 - num2);       
-        console.log(num1 * num2);
-        console.log(num1 / num2);   
-        console.log(num1 % num2);
-        console.log(num1 ** num2); // Exponentiation operator
-        console.log(num1++); // Postfix increment
-        console.log(num1--); // Postfix decrement
-        console.log(++num1); // Prefix increment
-        console.log(--num1); // Prefix decrement
-        console.log(num1 == num2); // Equality operator
-        console.log(num1 === num2); // Strict equality operator
-        console.log(num1 != num2); // Inequality operator
-        console.log(num1 !== num2); // Strict inequality operator
-        console.log(num1 > num2); // Greater than operator
-        console.log(num1 < num2); // Less than operator
-        console.log(num1 >= num2); // Greater than or equal to operator
-        console.log(num1 <= num2); // Less than or equal to operator
-        console.log(num1 && num2); // Logical AND operator
-        console.log(num1 || num2); // Logical OR operator
-        console.log(!num1); // Logical NOT operator
-        console.log(num1 & num2); // Bitwise AND operator
-        console.log(num1 | num2); // Bitwise OR operator
+        let name = "Stefanu_Ajao"
+        console.log(name.length)
 
-        let cloth = 200
-        let shoe = 100
-        let hat = 50
-        let total = cloth + shoe + hat
-        console.log(total);
+        let sentence = "I am a software engineer"
+        let newSentence = sentence.replace("software", "web")
+        console.log(newSentence);
 
-        let count = 0
-        let add_button = document.getElementById("add")
-        let remove_button = document.getElementById("remove")
-        let p = document.querySelector("p")
+        let price = 12.34567
+        let roundedPrice = price.toFixed(3)
+        console.log(roundedPrice);
 
-        add_button.addEventListener("click", function() {
-            count++
-            p.innerText = count
-        })
-        remove_button.addEventListener("click", function() {
-            count--
-            p.innerText = count
-        })
+        let isStudent = true;
+        let hasPaid = false;
+
+        if (isStudent === true || hasPaid === true) {
+            console.log("You can enter.");
+        } else {
+            console.log("You can not enter.");
+        }
+
+        let colours = ["red", "green", "blue", "yellow", "purple"];
+        colours[0] = "orange";
+        console.log(colours);
+
+        colours.push("pink");
+        console.log(colours);
+
+        colours.pop();
+        console.log(colours);
+
+        colours.shift();
+        console.log(colours);
+
+        colours.unshift("black");
+        console.log(colours);
+
+        colours.splice(1, 2);
+        console.log(colours);
+
+        colours.splice(1, 0, "white", "grey");
+        console.log(colours);
+
+        colours.sort();
+        console.log(colours);
+
+        colours.reverse();
+        console.log(colours);  
+        
+        let favourite_food = ["rice", "beans", "plantain", "yam", "egg", "chicken"];
+        console.log(favourite_food[0]);
+        console.log(favourite_food[5]);
+        console.log(favourite_food);
+
+        favourite_food.push("fish");
+        console.log(favourite_food);
+
+        favourite_food.pop();
+        console.log(favourite_food);   
+
+        favourite_food.shift();
+        console.log(favourite_food);    
+
+        favourite_food.unshift("pasta");
+        console.log(favourite_food);
+
+        favourite_food.splice(1, 2);
+        console.log(favourite_food);
+
+        favourite_food.splice(1, 0, "salad", "soup");
+        console.log(favourite_food);        
+
+        favourite_food.sort();
+        console.log(favourite_food);    
+
+        favourite_food.reverse();
+        console.log(favourite_food);
+
+        let person = {
+            name: "Stefanu Ajao",
+            age: 25,
+            city: "Ibadan",
+            isStudent: true,
+            favouriteFood: ["rice", "beans", "plantain"]
+        };
+        console.log(person.name);
+        console.log(person.age);
+        console.log(person.city);
+        console.log(person.isStudent);
+        console.log(person.favouriteFood);
+        console.log(person.favouriteFood[0]);
+        console.log(person.favouriteFood[1]);
+        console.log(person.favouriteFood[2]);
+        console.log(person.favouriteFood.length);
+        console.log(person.favouriteFood[0].length);
+        console.log(person.favouriteFood[1].length);
+        console.log(person.favouriteFood[2].length);
+        console.log(person.favouriteFood[0].toUpperCase());
+        console.log(person.favouriteFood[1].toUpperCase());
+        console.log(person.favouriteFood[2].toUpperCase());
+        console.log(person.favouriteFood[0].toLowerCase());
+        console.log(person.favouriteFood[1].toLowerCase());
+        console.log(person.favouriteFood[2].toLowerCase());
+        console.log(person.favouriteFood[0].charAt(0));
+        console.log(person.favouriteFood[1].charAt(0));
+        console.log(person.favouriteFood[2].charAt(0));
+        console.log(person.favouriteFood[0].charAt(1));
+        console.log(person.favouriteFood[1].charAt(1));
+        console.log(person.favouriteFood[2].charAt(1));
+
+        
 
     </script>
 </body>
