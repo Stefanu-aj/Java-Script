@@ -13,130 +13,165 @@
 
     <script>
        
-       let city = "Ibadan";
-        console.log(city);
+    //    let city = "Ibadan";
+    //     console.log(city);
 
-        let favoriteColor = "blue";
-        console.log(favoriteColor);
+    //     let favoriteColor = "blue";
+    //     console.log(favoriteColor);
 
-        const pi = 3.14;
-        console.log(pi);
+    //     const pi = 3.14;
+    //     console.log(pi);
 
-        let num1 = 15;
-        let num2 = 2;
-        console.log(num1 + num2);
+    //     let num1 = 15;
+    //     let num2 = 2;
+    //     console.log(num1 + num2);
 
-        let name = "Stefanu_Ajao"
-        console.log(name.length)
+    //     let name = "Stefanu_Ajao"
+    //     console.log(name.length)
 
-        let sentence = "I am a software engineer"
-        let newSentence = sentence.replace("software", "web")
-        console.log(newSentence);
+    //     let sentence = "I am a software engineer"
+    //     let newSentence = sentence.replace("software", "web")
+    //     console.log(newSentence);
 
-        let price = 12.34567
-        let roundedPrice = price.toFixed(3)
-        console.log(roundedPrice);
+    //     let price = 12.34567
+    //     let roundedPrice = price.toFixed(3)
+    //     console.log(roundedPrice);
 
-        let isStudent = true;
-        let hasPaid = false;
+    //     let isStudent = true;
+    //     let hasPaid = false;
 
-        if (isStudent === true || hasPaid === true) {
-            console.log("You can enter.");
-        } else {
-            console.log("You can not enter.");
-        }
+    //     if (isStudent === true || hasPaid === true) {
+    //         console.log("You can enter.");
+    //     } else {
+    //         console.log("You can not enter.");
+    //     }
 
-        let colours = ["red", "green", "blue", "yellow", "purple"];
-        colours[0] = "orange";
-        console.log(colours);
+    //     let colours = ["red", "green", "blue", "yellow", "purple"];
+    //     colours[0] = "orange";
+    //     console.log(colours);
 
-        colours.push("pink");
-        console.log(colours);
+    //     colours.push("pink");
+    //     console.log(colours);
 
-        colours.pop();
-        console.log(colours);
+    //     colours.pop();
+    //     console.log(colours);
 
-        colours.shift();
-        console.log(colours);
+    //     colours.shift();
+    //     console.log(colours);
 
-        colours.unshift("black");
-        console.log(colours);
+    //     colours.unshift("black");
+    //     console.log(colours);
 
-        colours.splice(1, 2);
-        console.log(colours);
+    //     colours.splice(1, 2);
+    //     console.log(colours);
 
-        colours.splice(1, 0, "white", "grey");
-        console.log(colours);
+    //     colours.splice(1, 0, "white", "grey");
+    //     console.log(colours);
 
-        colours.sort();
-        console.log(colours);
+    //     colours.sort();
+    //     console.log(colours);
 
-        colours.reverse();
-        console.log(colours);  
+    //     colours.reverse();
+    //     console.log(colours);  
         
-        let favourite_food = ["rice", "beans", "plantain", "yam", "egg", "chicken"];
-        console.log(favourite_food[0]);
-        console.log(favourite_food[5]);
-        console.log(favourite_food);
+    //     let favourite_food = ["rice", "beans", "plantain", "yam", "egg", "chicken"];
+    //     console.log(favourite_food[0]);
+    //     console.log(favourite_food[5]);
+    //     console.log(favourite_food);
 
-        favourite_food.push("fish");
-        console.log(favourite_food);
+    //     favourite_food.push("fish");
+    //     console.log(favourite_food);
 
-        favourite_food.pop();
-        console.log(favourite_food);   
+    //     favourite_food.pop();
+    //     console.log(favourite_food);   
 
-        favourite_food.shift();
-        console.log(favourite_food);    
+    //     favourite_food.shift();
+    //     console.log(favourite_food);    
 
-        favourite_food.unshift("pasta");
-        console.log(favourite_food);
+    //     favourite_food.unshift("pasta");
+    //     console.log(favourite_food);
 
-        favourite_food.splice(1, 2);
-        console.log(favourite_food);
+    //     favourite_food.splice(1, 2);
+    //     console.log(favourite_food);
 
-        favourite_food.splice(1, 0, "salad", "soup");
-        console.log(favourite_food);        
+    //     favourite_food.splice(1, 0, "salad", "soup");
+    //     console.log(favourite_food);        
 
-        favourite_food.sort();
-        console.log(favourite_food);    
+    //     favourite_food.sort();
+    //     console.log(favourite_food);    
 
-        favourite_food.reverse();
-        console.log(favourite_food);
+    //     favourite_food.reverse();
+    //     console.log(favourite_food);
 
-        let person = {
-            name: "Stefanu Ajao",
-            age: 25,
-            city: "Ibadan",
-            isStudent: true,
-            favouriteFood: ["rice", "beans", "plantain"]
-        };
-        console.log(person.name);
-        console.log(person.age);
-        console.log(person.city);
-        console.log(person.isStudent);
-        console.log(person.favouriteFood);
-        console.log(person.favouriteFood[0]);
-        console.log(person.favouriteFood[1]);
-        console.log(person.favouriteFood[2]);
-        console.log(person.favouriteFood.length);
-        console.log(person.favouriteFood[0].length);
-        console.log(person.favouriteFood[1].length);
-        console.log(person.favouriteFood[2].length);
-        console.log(person.favouriteFood[0].toUpperCase());
-        console.log(person.favouriteFood[1].toUpperCase());
-        console.log(person.favouriteFood[2].toUpperCase());
-        console.log(person.favouriteFood[0].toLowerCase());
-        console.log(person.favouriteFood[1].toLowerCase());
-        console.log(person.favouriteFood[2].toLowerCase());
-        console.log(person.favouriteFood[0].charAt(0));
-        console.log(person.favouriteFood[1].charAt(0));
-        console.log(person.favouriteFood[2].charAt(0));
-        console.log(person.favouriteFood[0].charAt(1));
-        console.log(person.favouriteFood[1].charAt(1));
-        console.log(person.favouriteFood[2].charAt(1));
+    //     let person = {
+    //         name: "Stefanu Ajao",
+    //         age: 25,
+    //         city: "Ibadan",
+    //         isStudent: true,
+    //         favouriteFood: ["rice", "beans", "plantain"]
+    //     };
+    //     console.log(person.name);
+    //     console.log(person.age);
+    //     console.log(person.city);
+    //     console.log(person.isStudent);
+    //     console.log(person.favouriteFood);
+    //     console.log(person.favouriteFood[0]);
+    //     console.log(person.favouriteFood[1]);
+    //     console.log(person.favouriteFood[2]);
+    //     console.log(person.favouriteFood.length);
+    //     console.log(person.favouriteFood[0].length);
+    //     console.log(person.favouriteFood[1].length);
+    //     console.log(person.favouriteFood[2].length);
+    //     console.log(person.favouriteFood[0].toUpperCase());
+    //     console.log(person.favouriteFood[1].toUpperCase());
+    //     console.log(person.favouriteFood[2].toUpperCase());
+    //     console.log(person.favouriteFood[0].toLowerCase());
+    //     console.log(person.favouriteFood[1].toLowerCase());
+    //     console.log(person.favouriteFood[2].toLowerCase());
+    //     console.log(person.favouriteFood[0].charAt(0));
+    //     console.log(person.favouriteFood[1].charAt(0));
+    //     console.log(person.favouriteFood[2].charAt(0));
+    //     console.log(person.favouriteFood[0].charAt(1));
+    //     console.log(person.favouriteFood[1].charAt(1));
+    //     console.log(person.favouriteFood[2].charAt(1));
 
-        
+    //     const Student = {
+    //             name: "Stefanu Ajao",
+    
+    //             age: 25,
+    //             city: "Ibadan",
+    //             Phone: "08143655811",
+    //             isSubscribed: true,
+    //             email: "steph@gmail.com",
+    //         };
+    //     console.log(Student.name, Student.age, Student.city, Student.Phone, Student.isSubscribed, Student.email);
+    //     Student.name = "John Doe";
+    //     console.log(Student);
 
+    //     delete Student.age;
+    //     console.log(Student)
+
+    const student = {
+        name: "Gbadi Madu",
+        age: 20,
+        score: 50,
+    }
+
+    console.log("Hello " + student.name)
+    console.log(student.age)
+    console.log(student.score)
+
+    let person = new Map([
+        ["name", "Stefanu Ajao"],
+        ["age", 25],
+        ["city", "Ibadan"],
+        ["favouriteFood", ["rice", "beans", "plantain"]]
+    ]);
+    person.delete("name");
+    console.log(person);
+
+    person.clear();
+    console.log(person);
     </script>
 </body>
 </html>
