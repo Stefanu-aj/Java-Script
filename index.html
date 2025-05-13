@@ -151,85 +151,116 @@
     //     delete Student.age;
     //     console.log(Student)
 
-    const student = {
-        name: "Gbadi Madu",
-        age: 20,
-        score: 50,
-    }
-    alert("Hello! " + student.name);
-    console.log("Hello " + student.name)
-    console.log(student.age)
-    console.log(student.score)
+    // const student = {
+    //     name: "Gbadi Madu",
+    //     age: 20,
+    //     score: 50,
+    // }
+    // alert("Hello! " + student.name);
+    // console.log("Hello " + student.name)
+    // console.log(student.age)
+    // console.log(student.score)
 
-    let person = new Map([
-        ["name", "Stefanu Ajao"],
-        ["age", 25],
-        ["city", "Ibadan"],
-        ["favouriteFood", ["rice", "beans", "plantain"]]
-    ]);
-    console.log(person.get("name"));
-    console.log(person.get("age")); 
-    console.log(person.has("city"));
+    // let person = new Map([
+    //     ["name", "Stefanu Ajao"],
+    //     ["age", 25],
+    //     ["city", "Ibadan"],
+    //     ["favouriteFood", ["rice", "beans", "plantain"]]
+    // ]);
+    // console.log(person.get("name"));
+    // console.log(person.get("age")); 
+    // console.log(person.has("city"));
 
 
-    const Library = {
-        name: "City Library",
-        location: "Downtown",
-        books: ["Book1", "Book2", "Book3"],
-        addBook: function(book) {
-            this.books.push(book);
-        },
-        removeBook: function(book) {
-            const index = this.books.indexOf(book);
-            if (index > -1) {
-                this.books.splice(index, 1);
-            }
-        },
-    };
-    console.log(Library.name);
-    console.log(Library.location);
-    console.log(Library.books);
-    Library.addBook("Book4");
-    console.log(Library.books); 
-    Library.removeBook("Book2");
-    console.log(Library.books);
-    console.log(Library.books.length);
-    console.log(Library.books[0]);
+    // const Library = {
+    //     name: "City Library",
+    //     location: "Downtown",
+    //     books: ["Book1", "Book2", "Book3"],
+    //     addBook: function(book) {
+    //         this.books.push(book);
+    //     },
+    //     removeBook: function(book) {
+    //         const index = this.books.indexOf(book);
+    //         if (index > -1) {
+    //             this.books.splice(index, 1);
+    //         }
+    //     },
+    // };
+    // console.log(Library.name);
+    // console.log(Library.location);
+    // console.log(Library.books);
+    // Library.addBook("Book4");
+    // console.log(Library.books); 
+    // Library.removeBook("Book2");
+    // console.log(Library.books);
+    // console.log(Library.books.length);
+    // console.log(Library.books[0]);
     
 
-    const addButton = document.getElementById("add");
-    const removeButton = document.getElementById("remove");
-    let Apprenhentice = {
-        name: "Tobi Adamu",
-        DOB: "12/12/2000",
-        age: 23,
-        location: "Ibadan",
-    }
+    // const addButton = document.getElementById("add");
+    // const removeButton = document.getElementById("remove");
+    // let Apprenhentice = {
+    //     name: "Tobi Adamu",
+    //     DOB: "12/12/2000",
+    //     age: 23,
+    //     location: "Ibadan",
+    // }
 
-    alert("Welcome " + Apprenhentice.name);
-    console.log(Apprenhentice.name);
-    console.log(Apprenhentice.DOB); 
-    console.log(Apprenhentice.age);
-    console.log(Apprenhentice.location);
-    console.log(Apprenhentice.name.length); 
-    console.log(Apprenhentice.DOB.length);
-    console.log(Apprenhentice.age.length);
-    console.log(Apprenhentice.location.length);
-    console.log(Apprenhentice.name.toUpperCase());
-    console.log(Apprenhentice.DOB.toUpperCase());
-    console.log(Apprenhentice.age.toUpperCase());
-    console.log(Apprenhentice.location.toUpperCase());
-    console.log(Apprenhentice.name.toLowerCase());
-    console.log(Apprenhentice.DOB.toLowerCase());
-    console.log(Apprenhentice.age.toLowerCase());
-    console.log(Apprenhentice.location.toLowerCase());
-    console.log(Apprenhentice.name.charAt(0));
-    console.log(Apprenhentice.DOB.charAt(0));
-    console.log(Apprenhentice.age.charAt(0));
-    console.log(Apprenhentice.location.charAt(0));
-    console.log(Apprenhentice.name.charAt(1));
-    console.log(Apprenhentice.DOB.charAt(1));
+    // alert("Welcome " + Apprenhentice.name);
+    // console.log(Apprenhentice.name);
+    // console.log(Apprenhentice.DOB); 
+    // console.log(Apprenhentice.age);
+    // console.log(Apprenhentice.location);
+    // console.log(Apprenhentice.name.length); 
+    // console.log(Apprenhentice.DOB.length);
+    // console.log(Apprenhentice.location.length);
 
+    let colours = ["red", "blue", "gray", "brown", "pink"];
+    console.log(colours)
+
+    colours.sort()
+    console.log(colours)
+
+    colours.reverse()
+    console.log(colours)
+
+     colours.slice(1,5);
+     console.log(colours)
+
+     colours.splice(1,2)
+     console.log(colours)
+
+     console.log(colours.indexOf("red"))
+     console.log(colours.includes("brown"))
+
+     let colour = ["purple", "white", "grey", "green"];
+
+     let merge = colours.concat(colour)
+     console.log(merge)
+
+     console.log(colours.join("_"))
+     console.log(colour.join("_"))
+
+     let number = [2, 5, 4, 3, 6, 7, 8, 10, 11]
+     console.log(number.find((x) => x > 4))
+
+     console.log(number.filter((x) => x < 11))
+
+     console.log(number.every((x) => x > 4))
+
+     console.log(number.some((x) => x > 4))
+
+     console.log(number.map((x) => x > 4))
+
+     console.log(number.map((x) => x * 4))
+
+     console.log(number.filter((x) => x % 2 == 0))
+
+     console.log(number.filter((x) => x % 2 !== 0))
+
+     console.log(number.toString())
+     
+    
     </script>
 </body>
 </html>
