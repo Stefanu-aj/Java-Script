@@ -258,9 +258,21 @@
 
      console.log(number.filter((x) => x % 2 !== 0))
 
+    console.log(number.filter((x) => x % 2 == 0).map((x) => x * 4))
+        
+
+
      console.log(number.toString())
      
-    
+     console.log(colour.toLocaleString("en-US"))
+
+        let number1 = [2, 5, 4, 3, 6, 7, 8, 10, 11]
+        console.log(number1.reduce((acc, curr) => acc + curr, 0))
+        console.log(number1.reduce((acc, curr) => acc - curr, 0))   
+        console.log(number1.reduce((acc, curr) => acc * curr, 1))
+        console.log(number1.reduce((acc, curr) => acc / curr, 1))
+        console.log(number1.reduce((acc, curr) => acc % curr, 1))
+
     </script>
 </body>
 </html>
