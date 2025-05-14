@@ -215,31 +215,31 @@
     // console.log(Apprenhentice.DOB.length);
     // console.log(Apprenhentice.location.length);
 
-    let colours = ["red", "blue", "gray", "brown", "pink"];
-    console.log(colours)
+    // let colours = ["red", "blue", "gray", "brown", "pink"];
+    // console.log(colours)
 
-    colours.sort()
-    console.log(colours)
+    // colours.sort()
+    // console.log(colours)
 
-    colours.reverse()
-    console.log(colours)
+    // colours.reverse()
+    // console.log(colours)
 
-     colours.slice(1,5);
-     console.log(colours)
+    //  colours.slice(1,5);
+    //  console.log(colours)
 
-     colours.splice(1,2)
-     console.log(colours)
+    //  colours.splice(1,2)
+    //  console.log(colours)
 
-     console.log(colours.indexOf("red"))
-     console.log(colours.includes("brown"))
+    //  console.log(colours.indexOf("red"))
+    //  console.log(colours.includes("brown"))
 
-     let colour = ["purple", "white", "grey", "green"];
+    //  let colour = ["purple", "white", "grey", "green"];
 
-     let merge = colours.concat(colour)
-     console.log(merge)
+    //  let merge = colours.concat(colour)
+    //  console.log(merge)
 
-     console.log(colours.join("_"))
-     console.log(colour.join("_"))
+    //  console.log(colours.join("_"))
+    //  console.log(colour.join("_"))
 
      let number = [2, 5, 4, 3, 6, 7, 8, 10, 11]
      console.log(number.find((x) => x > 4))
@@ -260,8 +260,6 @@
 
     console.log(number.filter((x) => x % 2 == 0).map((x) => x * 4))
         
-
-
      console.log(number.toString())
      
      console.log(colour.toLocaleString("en-US"))
@@ -273,6 +271,87 @@
         console.log(number1.reduce((acc, curr) => acc / curr, 1))
         console.log(number1.reduce((acc, curr) => acc % curr, 1))
 
+    let age = 20
+
+    if (age >= 18) {
+        console.log("You are an adult")
+    } else {
+        console.log("You are a minor")
+    }
+
+    let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+    if (num.filter((x) => x % 2 == 0)) {
+        console.log("even number")
+    } else {
+        console.log("odd number")
+    }
+
+    let user = {
+        name: "Stefanu Ajao",
+        age: 25,
+        city: "Ibadan",
+        isActive: false,
+        favouriteFood: ["rice", "beans", "plantain"]
+    };
+
+    if (user.isActive) {
+        console.log("Log in successful");
+    } else {
+        console.log("Log in failed");
+    } 
+
+    let batteryPercentage = 85;
+    if (batteryPercentage >= 80) {
+        console.log("Green");
+    } else if (batteryPercentage >= 50) {
+        console.log("Yellow");
+    } else if (batteryPercentage >= 20) {
+        console.log("Pink");
+    } else {
+        console.log("Red");
+    }
+
+    let grade = 102;
+
+    if (grade >= 100) {
+        console.log("Out of range");
+    } else if (grade >= 70 ) {
+        console.log("A");
+    } else if (grade >= 60) {
+        console.log("B");
+    } else if (grade >= 50) {
+        console.log("C");
+    } else if (grade >= 45) {
+        console.log("D");
+    } else {
+        console.log("Fail");
+    }
+
+    let trafficLight = "red";
+    switch (trafficLight) {
+        case "red":
+            console.log("Stop");
+            break;
+        case "yellow":
+            console.log("Get ready");
+            break;
+        case "green":
+            console.log("Go");
+            break;
+        default:
+            console.log("Keep moving");
+    }
+
+        let age = 17;
+        let message = age >= 18 ? "Adult" : "Minor";
+        console.log(message);
+
+        let number = 9;
+        let result = number % 2 == 0 ? "Even" : "odd";
+        console.log(result);
+
+        
     </script>
 </body>
 </html>
