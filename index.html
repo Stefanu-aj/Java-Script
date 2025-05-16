@@ -373,7 +373,20 @@
         const example = (a, b) => a + b;
         console.log(example(5, 10));
 
-      
+          setTimeout(() => {
+            console.log("Hello Stephen");
+        }, 60000);
+
+        function square(num) {
+            return num * num;
+        }
+        console.log(square(5));
+        console.log(square(10));
+
+        function evenOrOdd(num) {
+            return num % 2 === 0 ? "Even" : "Odd";
+        }
+        console.log(evenOrOdd(9));
     </script>
 </body>
 </html>
