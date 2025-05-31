@@ -1,8 +1,7 @@
-// fetch('https://dummyjson.com/products')
-// .then(res => res.json())
-// .then(data => console.log(data))
-// .catch((error) => console.error("error", error))
-
+fetch('https://dummyjson.com/products')
+.then(res => res.json())
+.then(data => console.log(data))
+.catch((error) => console.error("error", error))
 
 
 
@@ -30,9 +29,12 @@ function displayProducts(products) {
     li.innerHTML =`
       <img src="${product.thumbnail}" alt="${product.title}">
       <h3>${product.title}</h3>
-      <p>price: $${product.price}</p>
-      <p>${product.description.slice(0, 60)}...</p>
-      <p> comment: ${product.reviews[0].comment}
+      <p>price: ${product.price}</p>
+      <p>${product.description.slice(0, 40)}...</p>
+      <p> comment: ${product.reviews[0].comment}</p>
+      <p>rating: ${product.shippingInformation}</p>
+      <p>available: ${product.availabilityStatus}</p>
+      <p>brand: ${product.brand}</p>
     `;
     list.appendChild(li);
   })
